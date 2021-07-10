@@ -1,0 +1,11 @@
+package com.local.photoapp.api.users.data;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@FeignClient(name="albums-ws")
+public interface AlbumsServiceClient {
+
+	@GetMapping
+	public void getAlbums();
+}

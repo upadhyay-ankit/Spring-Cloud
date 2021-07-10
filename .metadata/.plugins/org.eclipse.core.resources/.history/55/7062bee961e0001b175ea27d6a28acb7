@@ -1,0 +1,9 @@
+package com.local.photoapp.api.users.data;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="albums-ws")
+public interface AlbumsServiceClient {
+
+	
+}

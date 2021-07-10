@@ -1,0 +1,17 @@
+package com.local.photoapp.api.gateway;
+
+import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GlobalFilterConfiguration {
+	
+	@Bean
+	public GlobalFilter secondPreFilter() {
+		return (exchange, chain) -> {
+			return chain.filter(exchange);
+		}
+	}
+
+}

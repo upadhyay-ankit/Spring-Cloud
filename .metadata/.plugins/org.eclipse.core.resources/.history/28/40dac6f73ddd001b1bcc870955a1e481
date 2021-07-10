@@ -1,0 +1,5 @@
+package com.local.photoapp.api.gateway;
+
+public class GlobalFilterConfiguration {
+
+}

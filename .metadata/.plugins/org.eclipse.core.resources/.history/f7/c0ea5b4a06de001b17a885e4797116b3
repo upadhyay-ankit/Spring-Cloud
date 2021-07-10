@@ -1,0 +1,7 @@
+spring.application.name=PhotoAppConfigServer
+server.port=8012
+
+spring.cloud.config.server.git.uri=https://github.com/upadhyay-ankit/PhotoAppConfiguration
+spring.cloud.config.server.git.username=upadhyay-ankit
+spring.cloud.config.server.git.password=Yagami@128
+spring.cloud.config.server.git.clone-on-start=true
